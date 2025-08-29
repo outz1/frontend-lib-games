@@ -2,53 +2,53 @@
 
 A modern Next.js application for managing a game library, built with development best practices and responsive design.
 
-## 📋 Sumário
+## 📋 Table of Contents
 
-- [Visão Geral](#visão-geral)
-- [Tecnologias](#tecnologias)
-- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Overview](#overview)
+- [Technologies](#technologies)
+- [Project Structure](#project-structure)
 - [API](#api)
-- [Componentes](#componentes)
-- [Instalação](#instalação)
-- [Uso](#uso)
+- [Components](#components)
+- [Installation](#installation)
+- [Usage](#usage)
 
-## 🎯 Visão Geral
+## 🎯 Overview
 
-Esta aplicação permite gerenciar uma biblioteca de jogos com as seguintes funcionalidades:
-- Listagem de jogos em grid responsivo
-- Visualização detalhada de cada jogo
-- Adição de novos jogos
-- Edição de jogos existentes
-- Remoção de jogos
-- Interface moderna e responsiva
+This application allows you to manage a game library with the following features:
+- Responsive grid listing of games
+- Detailed view of each game
+- Add new games
+- Edit existing games
+- Remove games
+- Modern and responsive interface
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-- **Next.js 14+** - Framework React com App Router
-- **TypeScript** - Tipagem estática
-- **Tailwind CSS** - Estilização e design system
-- **API RESTful** - Integração com backend
+- **Next.js 14+** - React Framework with App Router
+- **TypeScript** - Static typing
+- **Tailwind CSS** - Styling and design system
+- **API RESTful** - Backend integration
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```plaintext
 src/
-├── components/           # Componentes reutilizáveis
-│   ├── GameCard.tsx     # Card individual do jogo
-│   ├── Badge.tsx        # Badges para gênero/plataforma
-│   ├── Rating.tsx       # Componente de avaliação
-│   ├── PriceTag.tsx     # Formatação de preço
-│   ├── Alert.tsx        # Mensagens de erro/sucesso
-│   └── Loading.tsx      # Estado de carregamento
-├── app/                 # Páginas da aplicação
-│   ├── page.tsx         # Página inicial (lista)
-│   ├── games/new/       # Criação de novo jogo
-│   └── games/[id]/      # Detalhes/Edição do jogo
-├── lib/                 # Utilitários
-│   ├── api.ts          # Integração com backend
-│   └── utils.ts        # Funções utilitárias
-└── types/              # Definições de tipos
-    └── game.ts         # Interfaces do jogo
+├── components/           # Reusable components
+│   ├── GameCard.tsx     # Individual game card
+│   ├── Badge.tsx        # Genre and platform badges
+│   ├── Rating.tsx       # Rating component
+│   ├── PriceTag.tsx     # Price formatting
+│   ├── Alert.tsx        # Error/success messages
+│   └── Loading.tsx      # Loading state
+├── app/                 # Application pages
+│   ├── page.tsx         # Home page (list)
+│   ├── games/new/       # Create new game
+│   └── games/[id]/      # Game details/Edit
+├── lib/                 # Utilities
+│   ├── api.ts          # Backend integration
+│   └── utils.ts        # Utility functions
+└── types/              # Type definitions
+    └── game.ts         # Game interfaces
 ```
 
 ## 🔌 API
@@ -67,99 +67,99 @@ DELETE /games/:id # Remove um jogo
 
 ```typescript
 {
-  id: number;          // Identificador único
-  title: string;       // Título do jogo
-  genre: string;       // Gênero
-  platform: string;    // Plataforma
-  releaseDate: string; // Data de lançamento
-  rating: number;      // Avaliação
-  price: number;       // Preço
+  id: number;          // Unique identifier
+  title: string;       // Game title
+  genre: string;       // Genre
+  platform: string;    // Platform
+  releaseDate: string; // Release date
+  rating: number;      // Rating
+  price: number;       // Price
 }
 ```
 
-## 🧩 Componentes
+## 🧩 Components
 
 ### GameCard
-- Exibição de informações do jogo
-- Imagem com efeito hover
-- Badges para gênero e plataforma
-- Rating visual
-- Preço formatado
-- Botões de ação
+- Game information display
+- Image with hover effect
+- Genre and platform badges
+- Visual rating
+- Formatted price
+- Action buttons
 
-### Sistema de Design
-- Componentes reutilizáveis
-- Design system consistente
-- Responsividade
-- Feedback visual
-- Estados de loading
-- Tratamento de erros
+### Design System
+- Reusable components
+- Consistent design system
+- Responsiveness
+- Visual feedback
+- Loading states
+- Error handling
 
-## 🛠 Instalação
+## 🛠 Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone [REPOSITORY_URL]
 ```
 
-2. Instale as dependências:
+2. Install dependencies:
 ```bash
 cd frontend-games
 npm install
 ```
 
-3. Configure o ambiente:
-   - Certifique-se que a API está rodando em http://localhost:3000
-   - Verifique se as imagens estão na pasta public/images/games
+3. Set up the environment:
+   - Make sure the API is running on http://localhost:3000
+   - Verify that images are in the public/images/games folder
 
-4. Inicie o servidor de desenvolvimento:
+4. Start the development server:
 ```bash
 npm run dev
 ```
 
-## 💻 Uso
+## 💻 Usage
 
-A aplicação estará disponível em http://localhost:3001 e oferece:
+The application will be available at http://localhost:3001 and offers:
 
-- **Página Inicial**: Grid de jogos com cards informativos
-- **Detalhes**: Visualização completa das informações do jogo
-- **Formulário**: Interface para criação e edição de jogos
-- **Ações**: Botões para editar e remover jogos
+- **Home Page**: Grid of games with informative cards
+- **Details**: Complete view of game information
+- **Form**: Interface for creating and editing games
+- **Actions**: Buttons to edit and remove games
 
 ## 🎨 Design System
 
-- Cores consistentes para feedback visual
-- Tipografia hierárquica
-- Componentes reutilizáveis
-- Animações e transições suaves
-- Layout totalmente responsivo
+- Consistent colors for visual feedback
+- Hierarchical typography
+- Reusable components
+- Smooth animations and transitions
+- Fully responsive layout
 
 ## ✨ Features
 
-- [x] Lista de jogos em grid responsivo
-- [x] Cards com informações detalhadas
-- [x] Sistema de avaliação visual
-- [x] Formatação de data e preço
-- [x] Badges para categorias
+- [x] Responsive grid list of games
+- [x] Cards with detailed information
+- [x] Visual rating system
+- [x] Date and price formatting
+- [x] Category badges
 - [x] Loading states
-- [x] Tratamento de erros
-- [x] Feedback visual para ações
-- [x] Design moderno e responsivo
+- [x] Error handling
+- [x] Visual feedback for actions
+- [x] Modern and responsive design
 
-## 🔒 Segurança e Validação
+## 🔒 Security and Validation
 
-- Validação de formulários
-- Confirmação para ações destrutivas
-- Tratamento de erros da API
-- Feedback visual para o usuário
+- Form validation
+- Confirmation for destructive actions
+- API error handling
+- Visual feedback for users
 
-## 🤝 Contribuição
+## 🤝 Contributing
 
-Contribuições são bem-vindas! Por favor, leia as diretrizes de contribuição antes de submeter pull requests.
+Contributions are welcome! Please read the contribution guidelines before submitting pull requests.
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is under the MIT license. See the [LICENSE](LICENSE) file for details.
 
 ## Getting Started
 
