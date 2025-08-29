@@ -1,6 +1,6 @@
 # 🎮 Games Library
 
-Uma aplicação moderna em Next.js para gerenciamento de uma biblioteca de jogos, construída com as melhores práticas de desenvolvimento e design responsivo.
+A modern Next.js application for managing a game library, built with development best practices and responsive design.
 
 ## 📋 Sumário
 
