@@ -1,7 +1,7 @@
 # 🎮 Games Library
 __________________________________________________________________________________________________________________________________________
 <img width="1905" height="914" alt="Screenshot_2" src="https://github.com/user-attachments/assets/8c7a0462-acc4-4ca4-9ae4-1df7da2563ef" />
-__________________________________________________________________________________________________________________________________________
+
 
 A modern Next.js application for managing a game library, built with development best practices and responsive design.
 
